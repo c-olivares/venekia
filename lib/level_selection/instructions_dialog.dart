@@ -87,7 +87,7 @@ class _InstructionsDialogState extends State<InstructionsDialog> {
                       const Flexible(
                         flex: 7,
                         child: Text(
-                          'Agarra la mayor cantidad de arepas para ganar.',
+                          'Agarra la mayor cantidad de cookies para ganar.',
                         ),
                       ),
                       const SizedBox(width: 20),
@@ -97,7 +97,7 @@ class _InstructionsDialogState extends State<InstructionsDialog> {
                           width: 60,
                           height: 60,
                           child: SpriteAnimationWidget.asset(
-                            path: 'arepa.png',
+                            path: 'cookies1.png',
                             data: SpriteAnimationData.sequenced(
                               amount: 4,
                               stepTime: 0.15,

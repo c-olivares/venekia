@@ -19,7 +19,7 @@ class MainMenuScreen extends StatelessWidget {
     final audioController = context.watch<AudioController>();
 
     return Scaffold(
-      backgroundColor: palette.backgroundMain.color,
+      backgroundColor: Colors.purpleAccent[100],
       body: ResponsiveScreen(
         squarishMainArea: Center(
           child: Column(
@@ -27,7 +27,7 @@ class MainMenuScreen extends StatelessWidget {
             children: [
               Image.asset(
                 height: 250,
-                'assets/images/venekia.png',
+                'assets/images/omc3.png',
                 filterQuality: FilterQuality.none,
               ),
               _gap,
@@ -36,11 +36,11 @@ class MainMenuScreen extends StatelessWidget {
                 child: ConstrainedBox(
                   constraints: const BoxConstraints(maxWidth: 500),
                   child: const Text(
-                    'El Juego + Boleta.',
+                    '¿Cuántas Cookies puedes conseguir?',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Press Start 2P',
-                      fontSize: 30,
+                      fontSize: 25,
                       height: 1,
                     ),
                   ),
@@ -79,7 +79,7 @@ class MainMenuScreen extends StatelessWidget {
             ),
             _gap,
             const Text(
-              'Built with Flame, edit by Carlos Olivares',
+              'Edit by Carlos Olivares',
               style: TextStyle(color: Colors.lightBlue, fontSize: 10),
             ),
           ],
