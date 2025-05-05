@@ -26,7 +26,7 @@ class MainMenuScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                height: 280,
+                height: 250,
                 'assets/images/venekia.png',
                 filterQuality: FilterQuality.none,
               ),
@@ -80,7 +80,7 @@ class MainMenuScreen extends StatelessWidget {
             _gap,
             const Text(
               'Built with Flame, edit by Carlos Olivares',
-              style: TextStyle(color: Colors.lightBlue),
+              style: TextStyle(color: Colors.lightBlue, fontSize: 10),
             ),
           ],
         ),

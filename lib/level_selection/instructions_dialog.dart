@@ -63,11 +63,11 @@ class _InstructionsDialogState extends State<InstructionsDialog> {
                           width: 100,
                           height: 100,
                           child: SpriteAnimationWidget.asset(
-                            path: 'dash/dash_spritesheet.png',
+                            path: 'dash/VENEKIA.png',
                             data: SpriteAnimationData.sequenced(
                               amount: 3,
                               stepTime: 0.15,
-                              textureSize: Vector2.all(16),
+                              textureSize: Vector2.all(106),
                             ),
                           ),
                         ),
@@ -76,7 +76,7 @@ class _InstructionsDialogState extends State<InstructionsDialog> {
                       const Flexible(
                         flex: 7,
                         child: Text(
-                          'Tap/click on the screen to jump in that direction, tap again to double jump.',
+                          'Toca la pantalla para saltar.',
                         ),
                       ),
                     ],
@@ -87,7 +87,7 @@ class _InstructionsDialogState extends State<InstructionsDialog> {
                       const Flexible(
                         flex: 7,
                         child: Text(
-                          'You have to save as many Embers as possible to clear the level.',
+                          'Agarra la mayor cantidad de arepas para ganar.',
                         ),
                       ),
                       const SizedBox(width: 20),
@@ -97,11 +97,11 @@ class _InstructionsDialogState extends State<InstructionsDialog> {
                           width: 60,
                           height: 60,
                           child: SpriteAnimationWidget.asset(
-                            path: 'ember.png',
+                            path: 'arepa.png',
                             data: SpriteAnimationData.sequenced(
                               amount: 4,
                               stepTime: 0.15,
-                              textureSize: Vector2.all(16),
+                              textureSize: Vector2.all(118),
                             ),
                           ),
                         ),
@@ -117,14 +117,14 @@ class _InstructionsDialogState extends State<InstructionsDialog> {
                           width: 200,
                           height: 100,
                           child:
-                              SpriteWidget.asset(path: 'enemies/obstacles.png'),
+                              SpriteWidget.asset(path: 'enemies/enemigos.png'),
                         ),
                       ),
                       const SizedBox(width: 20),
                       const Flexible(
                         flex: 6,
                         child: Text(
-                          'Watch out for these, they will make you drop your Embers.',
+                          'Pendiente con estos, te quieren tumbar.',
                         ),
                       )
                     ],

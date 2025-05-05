@@ -10,18 +10,18 @@ import '../endless_world.dart';
 /// that the player can run into.
 class Obstacle extends SpriteComponent with HasWorldReference<EndlessWorld> {
   Obstacle.small({super.position})
-      : _srcSize = Vector2.all(16),
-        _srcPosition = Vector2.all(32),
+      : _srcSize = Vector2.all(220),
+        _srcPosition = Vector2.all(02),
         super(
-          size: Vector2.all(150),
+          size: Vector2.all(200),
           anchor: Anchor.bottomLeft,
         );
 
   Obstacle.tall({super.position})
-      : _srcSize = Vector2(32, 48),
-        _srcPosition = Vector2.zero(),
+      : _srcSize = Vector2(380, 224),
+        _srcPosition = Vector2(202, 102),
         super(
-          size: Vector2(200, 250),
+          size: Vector2.all(100),
           anchor: Anchor.bottomLeft,
         );
 
@@ -58,7 +58,7 @@ class Obstacle extends SpriteComponent with HasWorldReference<EndlessWorld> {
     // Since all the obstacles reside in the same image, srcSize and srcPosition
     // are used to determine what part of the image that should be used.
     sprite = await Sprite.load(
-      'enemies/obstacles.png',
+      'enemies/enemigos.png',
       srcSize: _srcSize,
       srcPosition: _srcPosition,
     );

@@ -32,7 +32,7 @@ class SettingsScreen extends StatelessWidget {
                   children: [
                     _gap,
                     const Text(
-                      'Settings',
+                      'Ajustes',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         fontFamily: 'Press Start 2P',
@@ -42,12 +42,12 @@ class SettingsScreen extends StatelessWidget {
                     ),
                     _gap,
                     const _NameChangeLine(
-                      'Name',
+                      'Nombre',
                     ),
                     ValueListenableBuilder<bool>(
                       valueListenable: settings.soundsOn,
                       builder: (context, soundsOn, child) => _SettingsLine(
-                        'Sound FX',
+                        'Efectos FX',
                         Icon(soundsOn ? Icons.graphic_eq : Icons.volume_off),
                         onSelected: () => settings.toggleSoundsOn(),
                       ),
@@ -55,13 +55,13 @@ class SettingsScreen extends StatelessWidget {
                     ValueListenableBuilder<bool>(
                       valueListenable: settings.musicOn,
                       builder: (context, musicOn, child) => _SettingsLine(
-                        'Music',
+                        'Música',
                         Icon(musicOn ? Icons.music_note : Icons.music_off),
                         onSelected: () => settings.toggleMusicOn(),
                       ),
                     ),
                     _SettingsLine(
-                      'Reset progress',
+                      'Resetear progreso',
                       const Icon(Icons.delete),
                       onSelected: () {
                         context.read<PlayerProgress>().reset();
@@ -82,7 +82,7 @@ class SettingsScreen extends StatelessWidget {
               onPressed: () {
                 GoRouter.of(context).pop();
               },
-              child: const Text('Back'),
+              child: const Text('Volver'),
             ),
             _gap,
           ],
